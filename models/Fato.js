@@ -3,11 +3,11 @@ const {DataTypes} = require("sequelize");
 
 const Fato = db.define("Fatos", {
     pergunta: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false
     },
     resposta: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false
     }
 })

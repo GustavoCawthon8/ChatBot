@@ -39,7 +39,7 @@ app.post("/perguntar", async(req, res)=>{
 })
 
 
-db.sync({force: false}).then(()=>{
+db.sync({force: true}).then(()=>{
     app.listen(PORT, ()=>{
         console.log(`Server running on port https://localhost:${PORT}`)
     })
